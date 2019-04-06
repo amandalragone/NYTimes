@@ -1,4 +1,4 @@
-$("button").on("click", function() {
+$("search-button").on("click", function() {
       var searchTerm = 'election';
 	  const apikey = "&api-key=GzrJfoaJ2Soki2xGNoS1CzWXguahXYmL";
       var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=" + searchTerm + apikey;
@@ -9,7 +9,7 @@ $("button").on("click", function() {
         method: "GET"
       })
         .then(function(response) {
-          var results = response.data;
+          var results = response.response;
 		  console.log(results);
 		});
-	});
+});
