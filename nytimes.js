@@ -10,3 +10,5 @@ $("button").on("click", function() {
       })
         .then(function(response) {
           var results = response.data;
+		  console.log(results);
+		};
