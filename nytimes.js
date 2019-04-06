@@ -1,6 +1,8 @@
 
 $("search-button").on("click", function() {
-var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=" + searchTerm + "GzrJfoaJ2Soki2xGNoS1CzWXguahXYmL"
+
+
+  var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=" + searchTerm + "GzrJfoaJ2Soki2xGNoS1CzWXguahXYmL"
 
 $.ajax({
     url: queryURL,
