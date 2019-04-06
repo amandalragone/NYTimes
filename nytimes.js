@@ -1,7 +1,8 @@
 $("button").on("click", function() {
-      var person = $(this).attr("data-person"); // $(this).data("person");
-      var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-        person + "&api_key=dc6zaTOxFJmzC&limit=10";
+      var searchTerm = 'election';
+	  const apikey = "GzrJfoaJ2Soki2xGNoS1CzWXguahXYmL";
+      var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=" + searchTerm + apikey;
+        ;
 
       $.ajax({
         url: queryURL,
