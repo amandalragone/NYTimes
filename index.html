@@ -18,25 +18,32 @@
               </div>
     </Header>
 <body>
-    <form>
-Search Term: 
-</br>
-<input id="search-term"></input>
+        <form>
+<div class="form-group">
+    <label for="Search-term">Search Term</label>
+    <input type="search" class="form-control" id="search-term" placeholder="search">
+  </div>
     </br>
-Number of Records to Retrieve: 
-</br>
-<input id="records"></input>
+
+    <div class="form-group">
+            <label for="records">Number of Records to Retrieve</label>
+            <input type="search" class="form-control" id="records" placeholder=" ">
+          </div>
     </br>
-Start Year: 
-</br>
-<input id="start-year"></input>
+
+    <div class="form-group">
+            <label for="start-year">Start Year</label>
+            <input type="search" class="form-control" id="start-year" placeholder=" ">
+          </div>
     </br>
-End Year: 
+
+    <div class="form-group">
+            <label for="start-year">End Year</label>
+            <input type="search" class="form-control" id="end-year" placeholder=" ">
+          </div> 
     </br>
-<input id="end-year"></input>
-    </br>
-<button id="search-button">Search</button>
-<button id="clear-results">Clear Results</button>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="reset" class="btn btn-primary">Reset</button>
     </form>
 <div id="results"></div>
 </body>
