@@ -6,10 +6,30 @@
     <title>New York Times Search</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-
+    
 </head>
-<Header></Header>
+<Header><h1>New York Times Search</h1></Header>
 <body>
-
+    <form>
+Search Term: 
+</br>
+<input id="search-term"></input>
+    </br>
+Number of Records to Retrieve: 
+</br>
+<input id="records"></input>
+    </br>
+Start Year: 
+</br>
+<input id="start-year"></input>
+    </br>
+End Year: 
+    </br>
+<input id="end-year"></input>
+    </br>
+<button id="search-button">Search</button>
+<button id="clear-results">Clear Results</button>
+    </form>
+<div id="results"></div>
 </body>
 </html>
