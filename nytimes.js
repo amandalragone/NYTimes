@@ -16,5 +16,6 @@ $('#search-button').on("click", function(event) {
         .then(function(response) {
           var results = response.response;
 		  console.log(results);
+		  $("#results").append(JSON.stringify(results));
 		});
 });
