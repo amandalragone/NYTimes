@@ -5,3 +5,14 @@ body {
 button {
     margin-top: 20px;
 }
+
+header {
+
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
